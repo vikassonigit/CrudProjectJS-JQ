@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="dynamicdp">
+        <input type="button" value="Add dropdown" class="dpbutton" onclick="adddrop();">
+        <div class="main-form" onsubmit="event.preventDefault(); addentry(); ">
+            <form action="" id="typeform">
+                <table>
+                    <tr>
+                        <td><Label>Name </Label></td>
+                        <td><input type="text" name="Name" value="" id="name" class="val" required></td>
+                    </tr>
+                    <tr>
+                        <td><Label>Subject </Label></td>
+                        <td>
+                            <select name="Subject" id="subject"  required>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><Label>Education </Label></td>
+                        <td><input type="text" name="Education" value="" id="education" class="val" required></td>
+                    </tr>
+                    <tr>
+                        <td><Label>DOB </Label></td>
+                        <td><input type="date" name="dob" id="dob" class="val" onchange="calage();"></td>
+                    </tr>
+                    <tr>
+                        <td><Label>Year </Label></td>
+                        <td><input type="text" name="age" id="age" class="val" readonly placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td><Label>Salary</Label></td>
+                        <td><input type="number" name="salary" class="val" id="salary" required></td>
+                    </tr>
+                </table>
+                <button type="submit" class="subbut" >Submit</button>
+            </form>
+            <input type="button" value="Edit" id="editbut" class="editbutton" >
+            <input type="button" value="Reset" id="reset" class="resetbut" onclick="reset();" >
+
+
+        </div>
+        <div class="main-table">
+
+            <table id="data-table" border="2px">
+                
+                <thead>
+                    <th>Name</th>
+                    <th>Subject</th>
+                    <th>Education</th>
+                    <th>DOB</th>
+                    <th>Year</th>
+                    <th>Salary</th>
+                    <th id="action-head" colspan="6" >Action
+                    </th>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="5"><label>Total Salary</label></th>
+                        <td colspan="5"><input type="text" value="" id="tsalary" readonly></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

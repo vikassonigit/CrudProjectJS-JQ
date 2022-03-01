@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+td {
+    padding: 10px;
+}
+
+.main-form {
+    border: 2px solid black;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+label {
+    font-size: 21px;
+    margin-right: 30px;
+}
+
+input {
+    padding: 10px;
+    width: 290px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid blue;
+}
+
+select {
+    width: 290px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+button.subbut {
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 21px;
+    background-color: limegreen;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+button.subbut:hover {
+    background-color: rgba(16, 14, 98, 0.7);
+    border-radius: 10px;
+    transition: 0.5s all;
+}
+
+.dpbutton{
+    display: flex;
+    justify-self: center;
+    /* width: 100%; */
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 21px;
+    background-color: limegreen;
+    font-weight: bold;
+    border: 2px solid black;
+}
+.dpbutton:hover{
+    background-color: rgba(16, 14, 98, 0.7);
+    border-radius: 10px;
+    transition: 0.5s all;
+}
+#reset{
+    display: none;
+    justify-self: center;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 21px;
+    background-color: limegreen;
+    font-weight: bold;
+    border: 2px solid black;
+}
+#reset:hover{
+    background-color: rgba(16, 14, 98, 0.7);
+    border-radius: 10px;
+    transition: 0.5s all;
+}
+
+#editbut{
+    display: none;
+    justify-self: center;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 21px;
+    background-color: limegreen;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+#editbut:hover{
+    background-color: rgba(16, 14, 98, 0.7);
+    border-radius: 10px;
+    transition: 0.5s all;
+}
+
+.main-table{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: none;
+}
+
+#data-table{
+    border: 1px solid blue;
+    border-collapse: collapse;
+    width: 30px;
+}
+
+#action-head{
+    text-align: center;
+}
+
+#data-table th, tr{
+    font-size: 19px;
+    width: 50px;
+    border-right: 1px solid blue;
+    text-align: center;
+}
+
+#data-table th{
+    background-color: rgb(255, 198, 134);
+    text-align: center;
+    padding: 8px 15px;
+}
+
+#data-table td,th{
+    min-width: 122px;   
+}
+
+button.action-but{
+    border: none;
+    background: none;
+    font-size: 15px;
+}
+
+#tsalary{
+    padding: 10px;
+    width: 290px;
+    font-size: 25px;
+    font-weight: 600;
+    border: none;
+    margin-left: 50px;
+    float: left;
+}
+
+img{
+    border: none;
+    width: 30%;
+    cursor: pointer;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+}
+
+img:hover{
+    opacity: 0.8;
+}
+
+
+#action-heading{
+    display: inline-block;
+    padding: 0px;
+    border: 1px solid blue;
+    border-collapse: collapse;
+    font-size: 12px;
+}
